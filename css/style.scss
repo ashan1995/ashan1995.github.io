@@ -47,6 +47,49 @@ main{
     
 }
 
+nav{
+
+    font-family: "Fira Code",sans-serif;
+    font-size: 1.5rem;
+
+    & ul {
+        list-style-type: none;
+        overflow: hidden;
+        border: 1px solid rgba($color: #fff, $alpha: 0.1);
+      }
+      
+      & li {
+        float: left;
+      }
+      
+      & li a {
+        display: block;
+        color: #607B96;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
+        border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
+      }
+
+      & #nametab{
+        padding-right: 50px;
+      }
+      
+      & li a:hover:not(.active) {
+        background-color: #111;
+      }
+      
+      & #nametab:hover:not(.active){
+        background-color: inherit;
+      }
+
+      & .active {
+        color: white;
+        border-bottom:3px solid #FEA55F ;
+      }
+}
+
 .title{
     color: #E5E9F0;
     font-family: "Fira Code",sans-serif;
@@ -71,10 +114,12 @@ main{
     &__msg{
         font-size: 1.5rem;
         color: #607B96;
+        margin-bottom: 1rem;
     }
     &__link{
         font-size: 1.8rem;
         color: #E99287;
+
         &--type{
             color: #4D5BCE;
         }
