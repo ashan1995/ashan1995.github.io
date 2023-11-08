@@ -48,19 +48,53 @@ main{
 }
 
 .title{
-    color: white;
+    color: #E5E9F0;
+    font-family: "Fira Code",sans-serif;
     position: absolute;
     left: 10%;
     top: 50%;
     transform: translate(-10%,-50%);
 
     &__prefix{
-        font-family: "Fira Code",sans-serif;
+        
         font-size: 1.5rem;
     }
 
     &__name{
-        font-family: "Fira Code",sans-serif;
+        
+        font-size: 4rem;
+    }
+    &__position{
         font-size: 3rem;
+        color: #4D5BCE;
+    }
+    &__msg{
+        font-size: 1.5rem;
+        color: #607B96;
+    }
+    &__link{
+        font-size: 1.8rem;
+        color: #E99287;
+        &--type{
+            color: #4D5BCE;
+        }
+        &--name{
+            color: #43D9AD;
+        }
+        &--sign{
+            color:white ;
+        }
+
+        & a{
+            text-decoration: none;
+        }
+
+        & a:visited{
+            
+                color: inherit; /* blue colors for links too */
+                text-decoration: inherit; /* no underline */
+            
+        }
+
     }
 }

@@ -43,17 +43,44 @@ main {
 }
 
 .title {
-  color: white;
+  color: #E5E9F0;
+  font-family: "Fira Code", sans-serif;
   position: absolute;
   left: 10%;
   top: 50%;
   transform: translate(-10%, -50%);
 }
 .title__prefix {
-  font-family: "Fira Code", sans-serif;
   font-size: 1.5rem;
 }
 .title__name {
-  font-family: "Fira Code", sans-serif;
+  font-size: 4rem;
+}
+.title__position {
   font-size: 3rem;
+  color: #4D5BCE;
+}
+.title__msg {
+  font-size: 1.5rem;
+  color: #607B96;
+}
+.title__link {
+  font-size: 1.8rem;
+  color: #E99287;
+}
+.title__link--type {
+  color: #4D5BCE;
+}
+.title__link--name {
+  color: #43D9AD;
+}
+.title__link--sign {
+  color: white;
+}
+.title__link a {
+  text-decoration: none;
+}
+.title__link a:visited {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }/*# sourceMappingURL=style.css.map */
