@@ -69,11 +69,11 @@ nav{
         padding: 14px 16px;
         text-decoration: none;
         border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
-        border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
+       
       }
 
       & #nametab{
-        padding-right: 50px;
+        width: 30rem;
       }
       
       & li a:hover:not(.active) {
@@ -142,4 +142,21 @@ nav{
         }
 
     }
+}
+
+.projectmain{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    height: 100%;
+    width: 30rem;
+    
+
+}
+
+.content{
+    border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
+    height: 100%;
 }

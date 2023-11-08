@@ -61,10 +61,9 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 nav #nametab {
-  padding-right: 50px;
+  width: 30rem;
 }
 nav li a:hover:not(.active) {
   background-color: #111;
@@ -119,4 +118,19 @@ nav .active {
 .title__link a:visited {
   color: inherit; /* blue colors for links too */
   text-decoration: inherit; /* no underline */
+}
+
+.projectmain {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  height: 100%;
+  width: 30rem;
+}
+
+.content {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
