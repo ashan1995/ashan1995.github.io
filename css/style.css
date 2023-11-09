@@ -51,6 +51,9 @@ nav ul {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+nav li:first-child {
+  width: 20%;
+}
 nav li {
   float: left;
 }
@@ -61,9 +64,6 @@ nav li a {
   padding: 14px 16px;
   text-decoration: none;
   border-right: 1px solid rgba(255, 255, 255, 0.1);
-}
-nav #nametab {
-  width: 30rem;
 }
 nav li a:hover:not(.active) {
   background-color: #111;
@@ -127,7 +127,7 @@ nav .active {
 
 .sidebar {
   height: 100%;
-  width: 30rem;
+  width: 20%;
 }
 
 .content {
@@ -173,4 +173,14 @@ nav .active {
   color: white;
   border: none;
   border-radius: 8px;
+}
+
+.aboutmemain {
+  height: 100vh;
+  display: flex;
+}
+.aboutmemain__content {
+  width: 60%;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }/*# sourceMappingURL=style.css.map */

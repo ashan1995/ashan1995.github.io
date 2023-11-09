@@ -57,6 +57,10 @@ nav{
         overflow: hidden;
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
       }
+
+      & li:first-child{
+        width: 20%;
+      }
       
       & li {
         float: left;
@@ -72,9 +76,7 @@ nav{
        
       }
 
-      & #nametab{
-        width: 30rem;
-      }
+      
       
       & li a:hover:not(.active) {
         background-color: #111;
@@ -151,7 +153,7 @@ nav{
 
 .sidebar{
     height: 100%;
-    width: 30rem;
+    width: 20%;
     
 
 }
@@ -208,5 +210,15 @@ nav{
                 border-radius: 8px;
             }
         }
+    }
+}
+
+.aboutmemain{
+    height: 100vh;
+    display: flex;
+    &__content{
+        width: 60%;
+        border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
+        border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
     }
 }
