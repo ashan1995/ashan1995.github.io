@@ -133,4 +133,44 @@ nav .active {
 .content {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   height: 100%;
+}
+
+.projectlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.projectlist__cardholder {
+  flex: 0 0 33.333333%;
+  padding: 5px;
+}
+.projectlist__name {
+  font-family: "Fira Code", sans-serif;
+  font-size: 1.2rem;
+  color: #5565E8;
+  margin-bottom: 10px;
+}
+.projectlist__card {
+  background-color: #011221;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.projectlist__card--thumbnail {
+  background: url("../images/thumb1.png");
+  background-size: cover;
+  height: 100px;
+}
+.projectlist__card--content {
+  font-family: "Fira Code", sans-serif;
+  font-size: 1.2rem;
+  color: #607B96;
+  padding: 20px;
+}
+.projectlist__card--content button {
+  padding: 5px 10px;
+  margin-top: 10px;
+  background-color: #1C2B3A;
+  color: white;
+  border: none;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */
