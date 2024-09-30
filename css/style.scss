@@ -191,8 +191,9 @@ nav{
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
         border-radius: 8px;
         &--thumbnail{
-            background: url("../images/thumb1.png");
+            background: url("../images/thumb_proj1.png");
             background-size: cover;
+            background-position: center;
             height: 100px;
         }
         &--content{
@@ -217,6 +218,11 @@ nav{
     height: 100vh;
     display: flex;
     &__content{
+        color: white;
+        text-align: justify;
+        line-height: 2.5rem;
+        font-size: 1.5rem;
+        padding: 50px;
         width: 60%;
         border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
         border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
