@@ -238,3 +238,52 @@ nav{
         margin: 20px auto;
     }
 }
+
+.projectdetails {
+    background: #2b2b2b;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projectdetails h1 {
+    color: #f9a825;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f9a825;
+    padding-bottom: 0.5rem;
+}
+
+.projectdetails h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.projectdetails p, 
+.projectdetails ul {
+    color: #ddd;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.projectdetails ul {
+    padding-left: 1.5rem;
+}
+
+.projectdetails ul li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.projectdetails ul li::before {
+    content: "•";
+    color: #f9a825;
+    position: absolute;
+    left: -1.5rem;
+    font-size: 1.5rem;
+}
