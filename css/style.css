@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Global Reset */
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,6 +34,7 @@ main {
   height: 100%;
 }
 
+/* Watermark */
 .watermark {
   background: url("../images/BackgroundBlurs.png");
   background-size: cover;
@@ -43,6 +45,7 @@ main {
   left: 50%;
 }
 
+/* Navigation */
 nav {
   font-family: "Fira Code", sans-serif;
   font-size: 1.5rem;
@@ -77,6 +80,7 @@ nav .active {
   border-bottom: 3px solid #FEA55F;
 }
 
+/* Title */
 .title {
   color: #E5E9F0;
   font-family: "Fira Code", sans-serif;
@@ -117,10 +121,11 @@ nav .active {
   text-decoration: none;
 }
 .title__link a:visited {
-  color: inherit; /* blue colors for links too */
-  text-decoration: inherit; /* no underline */
+  color: inherit;
+  text-decoration: inherit;
 }
 
+/* Project Main */
 .projectmain {
   display: flex;
   height: 100vh;
@@ -136,6 +141,7 @@ nav .active {
   height: 100%;
 }
 
+/* Project List */
 .projectlist {
   display: flex;
   flex-wrap: wrap;
@@ -177,6 +183,7 @@ nav .active {
   border-radius: 8px;
 }
 
+/* About Me */
 .aboutmemain {
   height: 100vh;
   display: flex;
@@ -212,6 +219,7 @@ nav .active {
   color: #f9a825;
 }
 
+/* Resume View */
 .resumeview {
   width: 100%;
   height: 100%;
@@ -221,6 +229,7 @@ nav .active {
   margin: 20px auto;
 }
 
+/* Project Details */
 .projectdetails {
   background: #2b2b2b;
   padding: 2rem;
@@ -268,4 +277,74 @@ nav .active {
   position: absolute;
   left: -1.5rem;
   font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 25%;
+  }
+  .projectlist__cardholder {
+    flex: 0 0 50%;
+  }
+  .aboutmemain__content {
+    width: 80%;
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    font-size: 1.2rem;
+  }
+  .title {
+    position: relative;
+    left: 5%;
+    top: 30%;
+    transform: none;
+    text-align: center;
+  }
+  .projectmain {
+    flex-direction: column;
+  }
+  .sidebar,
+  .sidebarright {
+    display: none; /* Hide sidebars on mobile */
+  }
+  .sidebar {
+    /* Optional: Add styles specific to the left sidebar */
+  }
+  .sidebarright {
+    /* Optional: Add styles specific to the right sidebar */
+  }
+  .projectlist__cardholder {
+    flex: 0 0 100%;
+  }
+  .aboutmemain__content {
+    width: 100%; /* Make it full width on mobile */
+    padding: 20px; /* Adjust padding for better fit */
+  }
+  .projectdetails h1 {
+    font-size: 2.5rem;
+  }
+  .projectdetails h3 {
+    font-size: 2rem;
+  }
+  .projectdetails p,
+  .projectdetails ul {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 480px) {
+  .title__name {
+    font-size: 3rem;
+  }
+  .title__position {
+    font-size: 2.5rem;
+  }
+  .aboutmemain__content {
+    font-size: 1.4rem;
+  }
+  .aboutmemain h1 {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

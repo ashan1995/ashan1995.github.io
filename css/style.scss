@@ -1,42 +1,40 @@
-//reset
-
-*,*::before,*::after{
+/* Global Reset */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     font: inherit;
 }
 
-html{
+html {
     color-scheme: dark-light;
     font-size: 10px;
 }
 
-img,picture,svg,video{
+img, picture, svg, video {
     display: block;
     max-width: 100%;
 }
 
-input,textarea,button,select{
-    font:inherit;
+input, textarea, button, select {
+    font: inherit;
 }
 
-body{
+body {
     min-height: 100vh;
     background-color: #011627;
     overflow: hidden;
 }
 
-main{
-   
+main {
     height: 100%;
-    
 }
 
-.watermark{
+/* Watermark */
+.watermark {
     background: url('../images/BackgroundBlurs.png');
     background-size: cover;
     width: 700px;
@@ -44,165 +42,160 @@ main{
     position: absolute;
     top: 10%;
     left: 50%;
-    
 }
 
-nav{
-
-    font-family: "Fira Code",sans-serif;
+/* Navigation */
+nav {
+    font-family: "Fira Code", sans-serif;
     font-size: 1.5rem;
 
     & ul {
         list-style-type: none;
         overflow: hidden;
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
-      }
+    }
 
-      & li:first-child{
+    & li:first-child {
         width: 20%;
-      }
-      
-      & li {
+    }
+
+    & li {
         float: left;
-      }
-      
-      & li a {
+    }
+
+    & li a {
         display: block;
         color: #607B96;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
-       
-      }
+    }
 
-      
-      
-      & li a:hover:not(.active) {
+    & li a:hover:not(.active) {
         background-color: #111;
-      }
-      
-      & #nametab:hover:not(.active){
-        background-color: inherit;
-      }
+    }
 
-      & .active {
+    & #nametab:hover:not(.active) {
+        background-color: inherit;
+    }
+
+    & .active {
         color: white;
-        border-bottom:3px solid #FEA55F ;
-      }
+        border-bottom: 3px solid #FEA55F;
+    }
 }
 
-.title{
+/* Title */
+.title {
     color: #E5E9F0;
-    font-family: "Fira Code",sans-serif;
+    font-family: "Fira Code", sans-serif;
     position: absolute;
     left: 10%;
     top: 50%;
-    transform: translate(-10%,-50%);
+    transform: translate(-10%, -50%);
 
-    &__prefix{
-        
+    &__prefix {
         font-size: 1.5rem;
     }
 
-    &__name{
-        
+    &__name {
         font-size: 4rem;
     }
-    &__position{
+
+    &__position {
         font-size: 3rem;
         color: #4D5BCE;
     }
-    &__msg{
+
+    &__msg {
         font-size: 1.5rem;
         color: #607B96;
         margin-bottom: 1rem;
     }
-    &__link{
+
+    &__link {
         font-size: 1.8rem;
         color: #E99287;
 
-        &--type{
+        &--type {
             color: #4D5BCE;
         }
-        &--name{
+
+        &--name {
             color: #43D9AD;
         }
-        &--sign{
-            color:white ;
+
+        &--sign {
+            color: white;
         }
 
-        & a{
+        & a {
             text-decoration: none;
         }
 
-        & a:visited{
-            
-                color: inherit; /* blue colors for links too */
-                text-decoration: inherit; /* no underline */
-            
+        & a:visited {
+            color: inherit;
+            text-decoration: inherit;
         }
-
     }
 }
 
-.projectmain{
+/* Project Main */
+.projectmain {
     display: flex;
     height: 100vh;
 }
 
-.sidebar{
+.sidebar {
     height: 100%;
     width: 20%;
-    
-
 }
 
-.content{
+.content {
     border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
     height: 100%;
 }
 
-.projectlist{
-
+/* Project List */
+.projectlist {
     display: flex;
     flex-wrap: wrap;
-    padding:30px;
- 
+    padding: 30px;
 
-    &__cardholder{
+    &__cardholder {
         flex: 0 0 33.333333%;
         padding: 5px;
-       
 
-        &--main{
-        }
+        &--main {}
     }
 
-    &__name{
-        font-family: "Fira Code",sans-serif;
+    &__name {
+        font-family: "Fira Code", sans-serif;
         font-size: 1.2rem;
         color: #5565E8;
         margin-bottom: 10px;
     }
 
-    &__card{
+    &__card {
         background-color: #011221;
         border: 1px solid rgba($color: #fff, $alpha: 0.1);
         border-radius: 8px;
-        &--thumbnail{
+
+        &--thumbnail {
             background: url("../images/thumb_proj1.png");
             background-size: cover;
             background-position: center;
             height: 100px;
         }
-        &--content{
-            font-family: "Fira Code",sans-serif;
+
+        &--content {
+            font-family: "Fira Code", sans-serif;
             font-size: 1.2rem;
             color: #607B96;
             padding: 20px;
 
-            & button{
+            & button {
                 padding: 5px 10px;
                 margin-top: 10px;
                 background-color: #1C2B3A;
@@ -214,6 +207,7 @@ nav{
     }
 }
 
+/* About Me */
 .aboutmemain {
     height: 100vh;
     display: flex;
@@ -249,17 +243,18 @@ nav{
     color: #f9a825;
 }
 
-
-.resumeview{
+/* Resume View */
+.resumeview {
     width: 100%;
     height: 100%;
 
-    & embed{
+    & embed {
         display: block;
         margin: 20px auto;
     }
 }
 
+/* Project Details */
 .projectdetails {
     background: #2b2b2b;
     padding: 2rem;
@@ -307,4 +302,90 @@ nav{
     position: absolute;
     left: -1.5rem;
     font-size: 1.5rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 25%;
+    }
+
+    .projectlist__cardholder {
+        flex: 0 0 50%;
+    }
+
+    .aboutmemain__content {
+        width: 80%;
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        font-size: 1.2rem;
+    }
+
+    .title {
+        position: relative;
+        left: 5%;
+        top: 30%;
+        transform: none;
+        text-align: center;
+    }
+
+    .projectmain {
+        flex-direction: column;
+    }
+
+    .sidebar,
+    .sidebarright {
+        display: none; /* Hide sidebars on mobile */
+    }
+    .sidebar {
+        /* Optional: Add styles specific to the left sidebar */
+    }
+
+    .sidebarright {
+        /* Optional: Add styles specific to the right sidebar */
+    }
+
+    .projectlist__cardholder {
+        flex: 0 0 100%;
+    }
+
+    .aboutmemain__content {
+        width: 100%; /* Make it full width on mobile */
+        padding: 20px; /* Adjust padding for better fit */
+    }
+
+    .projectdetails h1 {
+        font-size: 2.5rem;
+    }
+
+    .projectdetails h3 {
+        font-size: 2rem;
+    }
+
+    .projectdetails p,
+    .projectdetails ul {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title__name {
+        font-size: 3rem;
+    }
+
+    .title__position {
+        font-size: 2.5rem;
+    }
+
+    .aboutmemain__content {
+        font-size: 1.4rem;
+    }
+
+    .aboutmemain h1 {
+        font-size: 2rem;
+    }
 }
