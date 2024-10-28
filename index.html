@@ -9,15 +9,28 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a id="nametab" href="#home">ashan-samarasinghe</a></li>
-            <li><a class="active" href="#">_hello</a></li>
-            <li><a href="aboutme.html">_about-me</a></li>
-            <li><a href="projects.html">_projects</a></li>
-            <li style="float:right"><a  href="files/resume.pdf" download="ashan_resume">_resume</a></li>
-          </ul>
+        <div class="floatLeft">
+            <div class="navItem">
+                <a id="nametab" href="#home">ashan-samarasinghe</a>
+            </div>
+            <div class="navItem">
+                <a class="active" href="#">_hello</a>
+            </div>
+            <div class="navItem">
+                <a href="aboutme.html">_about-me</a>
+            </div>
+            <div class="navItem">
+                <a href="projects.html">_projects</a>
+            </div>
+        </div>
+        <div class="floatRight">
+            <div class="navItem">
+                <a  href="files/resume.pdf" download="ashan_resume">_resume</a>
+            </div>
+        </div>
+
     </nav>
-    <main>
+    <div class="mainDiv">
         <div class="watermark"></div>
         <div class="title">
             <p class="title__prefix">Hi all, I am </p>
@@ -30,7 +43,7 @@
             <p class="title__msg">// you can also see my work in my Github page</p>
             <p class="title__link"><span class="title__link--type">const</span> <span class="title__link--name">githubLink</span> <span class="title__link--sign">=</span> <a href="https://github.com/ashan1995">“https://github.com/ashan1995”</a></p>
         </div>
-    </main>
+    </div>
    
 </body>
 </html>
