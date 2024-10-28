@@ -214,20 +214,41 @@ nav{
     }
 }
 
-.aboutmemain{
+.aboutmemain {
     height: 100vh;
     display: flex;
-    &__content{
-        color: white;
-        text-align: justify;
-        line-height: 2.5rem;
-        font-size: 1.5rem;
-        padding: 50px;
-        width: 60%;
-        border-right: 1px solid rgba($color: #fff, $alpha: 0.1);
-        border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
-    }
 }
+
+.aboutmemain__content {
+    color: white;
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    padding: 60px 40px;
+    width: 70%;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.aboutmemain h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #f9a825;
+    border-bottom: 2px solid #f9a825;
+    padding-bottom: 0.5rem;
+}
+
+.aboutmemain p {
+    margin-bottom: 1.5rem;
+    transition: color 0.3s;
+}
+
+.aboutmemain p:hover {
+    color: #f9a825;
+}
+
 
 .resumeview{
     width: 100%;
