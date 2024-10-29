@@ -268,10 +268,15 @@ nav .active {
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
+.aboutmemain__content p {
+  text-align: justify;
+}
 @media (max-width: 768px) {
   .aboutmemain__content {
     width: 100%;
     overflow-y: scroll;
+    padding: 40px 30px;
+    font-size: 1.5rem;
   }
 }
 
@@ -281,6 +286,13 @@ nav .active {
   color: #f9a825;
   border-bottom: 2px solid #f9a825;
   padding-bottom: 0.5rem;
+}
+@media (max-width: 768px) {
+  .aboutmemain h1 {
+    font-size: 2rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.3rem;
+  }
 }
 
 .aboutmemain p {

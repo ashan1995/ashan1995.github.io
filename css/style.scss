@@ -295,9 +295,16 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
+    & p{
+        text-align: justify;
+       
+    }
+
     @include respond('tablet') {
         width: 100%;
         overflow-y: scroll;
+        padding: 40px 30px;
+        font-size: 1.5rem;
     }
 }
 
@@ -307,6 +314,12 @@ nav {
     color: #f9a825;
     border-bottom: 2px solid #f9a825;
     padding-bottom: 0.5rem;
+
+    @include respond('tablet') {
+       font-size: 2rem;
+       margin-bottom: 0.7rem;
+       padding-bottom: 0.3rem;
+    }
 }
 
 .aboutmemain p {
