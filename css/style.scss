@@ -216,6 +216,11 @@ nav {
 .content {
     border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
     height: 100%;
+
+    @include respond('tablet') {
+        overflow-y:scroll ;
+        
+    }
 }
 
 /* Project List */
@@ -226,6 +231,7 @@ nav {
 
     @include respond('tablet') {
         flex-direction: column;
+        
     }
 
     &__cardholder {
