@@ -147,9 +147,19 @@ nav .active {
   color: #607B96;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  .title__msg {
+    font-size: 0.8rem;
+  }
+}
 .title__link {
   font-size: 1.8rem;
   color: #E99287;
+}
+@media (max-width: 768px) {
+  .title__link {
+    font-size: 1rem;
+  }
 }
 .title__link--type {
   color: #4D5BCE;
@@ -256,6 +266,7 @@ nav .active {
 @media (max-width: 768px) {
   .aboutmemain__content {
     width: 100%;
+    overflow-y: scroll;
   }
 }
 

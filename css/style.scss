@@ -161,11 +161,19 @@ nav {
         font-size: 1.5rem;
         color: #607B96;
         margin-bottom: 1rem;
+
+        @include respond('tablet') {
+            font-size: 0.8rem;
+        }
     }
 
     &__link {
         font-size: 1.8rem;
         color: #E99287;
+
+        @include respond('tablet') {
+            font-size: 1rem;
+        }
 
         &--type {
             color: #4D5BCE;
@@ -283,6 +291,7 @@ nav {
 
     @include respond('tablet') {
         width: 100%;
+        overflow-y: scroll;
     }
 }
 
