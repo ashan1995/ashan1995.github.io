@@ -199,6 +199,10 @@ nav {
 .sidebar {
     height: 100%;
     width: 20%;
+
+    @include respond('tablet') {
+        display: none;
+    }
 }
 
 .content {
@@ -273,6 +277,10 @@ nav {
     border-left: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+
+    @include respond('tablet') {
+        width: 100%;
+    }
 }
 
 .aboutmemain h1 {

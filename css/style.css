@@ -178,6 +178,11 @@ nav .active {
   height: 100%;
   width: 20%;
 }
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
 
 .content {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -243,6 +248,11 @@ nav .active {
   border-left: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 768px) {
+  .aboutmemain__content {
+    width: 100%;
+  }
 }
 
 .aboutmemain h1 {
