@@ -32,7 +32,7 @@ input, textarea, button, select {
 body {
     min-height: 100vh;
     background-color: #011627;
-    overflow: hidden;
+    
 }
 
 .mainDiv {
@@ -217,10 +217,7 @@ nav {
     border-left: 1px solid rgba($color: #fff, $alpha: 0.1);
     height: 100%;
 
-    @include respond('tablet') {
-        overflow-y:scroll ;
-        
-    }
+
 }
 
 /* Project List */
@@ -302,7 +299,6 @@ nav {
 
     @include respond('tablet') {
         width: 100%;
-        overflow-y: scroll;
         padding: 40px 30px;
         font-size: 1.5rem;
     }
